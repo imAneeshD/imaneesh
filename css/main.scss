@@ -1,0 +1,492 @@
+$primaryColor: #E1CBE2;
+$secondaryColor: #785B80;
+$btn-color: #EDCB9D;
+
+body {
+    background: $secondaryColor;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    z-index: 999;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+
+    span img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-nav {
+        position: relative;
+    }
+}
+
+.main-content {
+    background: url(../images/android2.svg) center/cover no-repeat;
+    margin-top: 0;
+    height: 100vh;
+
+    @media screen and (min-width:990px) {
+        background: url(../images/desktop.svg) center/cover no-repeat;
+
+    }
+
+    .card-holder {
+        width: 60%;
+        height: 60%;
+        margin-top: 10rem;
+        position: absolute;
+        margin-left: 5rem;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 50%;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        filter: drop-shadow(1px 1px 1px);
+    }
+
+    .card {
+        margin: 0rem 52%;
+        background: $primaryColor;
+        width: 300px;
+        height: 400px;
+        border-radius: 0;
+        padding-top: 3rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        border: 0;
+        filter: drop-shadow(1px 1px 5px);
+
+        h2 {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .card-footer {
+            background: white;
+            left: 0;
+            right: 0;
+            height: 50px;
+            bottom: 0;
+            margin-top: 1rem;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .line {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: grey;
+
+        height: 1px;
+        width: 20%;
+    }
+
+    .row {
+        .text-holder {
+            width: 90%;
+            height: 30%;
+            position: absolute;
+            padding-top: 1rem;
+            margin: 47rem 0rem;
+            text-align: center;
+
+            h2,
+            h5 {
+                color: white;
+                font-weight: bold;
+            }
+
+            h2 {
+                padding-top: .5rem;
+                font-size: 40px;
+                width: auto;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            .row {
+                margin: 1rem .1rem;
+
+                p {
+                    color: white
+                }
+
+
+                p {
+                    padding-top: 1rem;
+                    font-size: 17px;
+                }
+
+                .btn {
+                    margin-left: 1rem;
+                }
+
+                a {
+                    color: black;
+                    background: $btn-color;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (min-width:570px) {
+
+        .card-holder {
+            margin: 10rem 6rem;
+        }
+    }
+
+    @media screen and (min-width:660px) {
+
+        .card-holder {
+            margin: 10rem 7rem;
+        }
+    }
+
+    @media screen and (min-width:820px) {
+
+        .card-holder {
+            margin: 10rem 9rem;
+        }
+    }
+
+    @media screen and (min-width:990px) {
+
+        .card-holder {
+            margin: 10rem 7rem;
+
+            .card {
+                width: 300px
+            }
+        }
+
+
+        .row {
+            .text-holder {
+                width: 400px;
+                margin-top: 25rem;
+                margin-left: 25%;
+
+                h2,
+                h5 {
+                    color: black;
+                }
+
+                .row {
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (min-width:990px) {
+
+        .card-holder {
+            margin: 10rem 9rem;
+
+            .card {
+                width: 300px
+            }
+        }
+
+        .row {
+            .text-holder {
+                width: 400px;
+                margin-top: 25rem;
+                margin-left: 25%;
+
+                h2 {
+                    font-size: 60px;
+                }
+
+                h5 {
+                    font-size: 25px;
+
+                }
+
+                h2,
+                h5 {
+                    color: black;
+                }
+
+                .row {
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1250px) {
+
+        .card-holder {
+            margin: 10rem 8rem;
+
+            .card {
+                width: 350px;
+                height: 500px;
+
+            }
+        }
+
+        .row {
+            .text-holder {
+                width: 500px;
+                margin-top: 25rem;
+                margin-left: 25%;
+
+                h2,
+                h5 {
+                    color: black;
+                }
+
+                h2 {
+                    font-size: 80px;
+
+                }
+
+                h5 {
+                    font-size: 30px;
+                }
+
+                .row {
+                    p {
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1620px) {
+        .card-holder {
+            margin: 10rem 13rem;
+
+            .card {
+                width: 350px;
+                height: 500px;
+
+            }
+        }
+
+        .row {
+            .text-holder {
+                width: 700px;
+                margin-top: 25rem;
+                margin-left: 25%;
+            }
+        }
+    }
+
+}
+
+
+//Experience page & Projects
+
+.main {
+    position: absolute;
+    margin: 20% 5%;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: bold;
+            color: #EDCB9D;
+        }
+
+        a {
+            background: $btn-color;
+            padding-top: .7rem;
+        }
+    }
+
+    .row {
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        padding: 1rem;
+
+        .col-sm-6 {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            .card {
+                filter: drop-shadow(1px 1px 5px);
+                background: $primaryColor;
+                margin: 0;
+                width: 100%;
+                padding: 0;
+
+                .company {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    img {
+                        width: 30px;
+                        height: auto;
+                        border-radius: 50%;
+                    }
+                }
+
+                .time {
+                    font-size: 14px;
+                    padding: 1rem 0;
+                    margin: 0;
+                    right: 0;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width:628px) {
+    .main {
+        width: 50%;
+        margin: 5% 25%;
+    }
+}
+
+
+
+
+//About me
+.about-main {
+    background: $secondaryColor;
+    display: block;
+    padding-top: 20%;
+    width: 100vw;
+    position: relative;
+
+    .text-holder {
+        text-align: center;
+        padding: 0 3rem;
+
+        .bio-text {
+            p {
+                text-align: start;
+                padding-top: .1rem;
+            }
+        }
+    }
+
+    .img-holder {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+        img {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+    }
+
+    h1 {
+        padding: 1rem;
+        color: wheat;
+        font-weight: bold;
+    }
+
+    .bio-text p {
+        padding: 1rem;
+        color: white;
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width:1140px) {
+    .about-main {
+        padding-top: 10%;
+        height: 100vh;
+
+        .text-holder {
+            .bio-text {
+                p {
+                    padding: 0 20rem;
+                }
+            }
+        }
+
+        .img-holder {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        }
+    }
+}
+
+.social {
+    width: 50px;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 30px;
+            color: black;
+            padding: .5rem 0;
+
+        }
+    }
+}
