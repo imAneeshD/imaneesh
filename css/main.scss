@@ -352,10 +352,12 @@ body {
                 margin: 0;
                 width: 100%;
                 padding: 0;
-                a{
+
+                a {
                     color: black;
                     text-decoration: none;
-                    &:hover{
+
+                    &:hover {
                         color: $secondaryColor;
                     }
                 }
@@ -494,22 +496,19 @@ body {
             width: 30px;
             color: black;
             padding: .5rem 0;
-            &:hover{
+
+            &:hover {
                 width: 35px;
             }
 
         }
     }
 }
+
 //publications
 
-.carousel-inner{
-
-    text-align: center;
-.carousel-item{
-    .card{
-        margin-left: 6rem;
+.my-cards {
+    .my-col {
+        margin: 1rem 3rem;
     }
-}
-
 }

@@ -379,9 +379,6 @@ body {
   width: 35px;
 }
 
-.carousel-inner {
-  text-align: center;
-}
-.carousel-inner .carousel-item .card {
-  margin-left: 6rem;
+.my-cards .my-col {
+  margin: 1rem 3rem;
 }/*# sourceMappingURL=main.css.map */
